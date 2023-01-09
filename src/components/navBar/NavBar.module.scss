@@ -1,0 +1,31 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 3vh 4vw;
+
+  .left-container {
+    display: flex;
+  }
+
+  .right-container {
+    display: flex;
+    gap: 2.6vw;
+
+    button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      color: #e3e3e3;
+      font-weight: 700;
+
+      .yu-logo {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    button:hover {
+      color: white;
+    }
+  }
+}
