@@ -1,31 +1,45 @@
 .nav-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 3vh 4vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
 
-  .left-container {
+  .nav-content {
     display: flex;
-  }
+    justify-content: space-between;
+    padding: 3vh 4vw;
 
-  .right-container {
-    display: flex;
-    gap: 2.6vw;
-
-    button {
-      background-color: transparent;
-      border: none;
-      cursor: pointer;
-      color: #e3e3e3;
-      font-weight: 700;
-
-      .yu-logo {
-        width: 20px;
-        height: 20px;
-      }
+    .left-container {
+      display: flex;
     }
 
-    button:hover {
-      color: white;
+    .right-container {
+      display: flex;
+      gap: 2.6vw;
+
+      button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        color: #e3e3e3;
+        font-weight: 700;
+
+        .yu-logo {
+          width: 20px;
+          height: 20px;
+
+          &:hover {
+            path {
+              stroke: white;
+            }
+          }
+        }
+      }
+
+      button:hover {
+        color: white;
+      }
     }
   }
 }

@@ -1,0 +1,24 @@
+.checkbox-wrapper {
+  display: flex;
+  gap: 0.5vw;
+  align-items: center;
+
+  input {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #8fc3ec;
+    border-radius: 2px;
+  }
+
+  input:checked {
+    background-color: #8fc3ec;
+  }
+
+  .label {
+    font-size: 14px;
+    line-height: 20px;
+    color: #8fc3ec;
+    white-space: nowrap;
+  }
+}

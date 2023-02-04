@@ -1,0 +1,26 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform-origin: right top;
+  transform: rotate(-90deg) translateY(-100vh);
+  height: 100vw;
+  width: 100vh;
+  gap: 10.2vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  /*hide scroll bar*/
+  -ms-overflow-style: none; // for IE
+  scrollbar-width: none; // for firefox
+
+  .project {
+    transform: rotate(90deg);
+    max-width: fit-content;
+  }
+}
+
+// for webkit-based browser
+.home-container::-webkit-scrollbar {
+  display: none;
+}
