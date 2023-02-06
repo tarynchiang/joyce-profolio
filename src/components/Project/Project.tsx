@@ -10,7 +10,7 @@ export default function Project(props: ProjectType) {
   return (
     <div className={styles["project-container"]}>
       <div className={styles["logo-container"]}>
-        <img src={props.icon} alt="project-logo" />
+        <img src={process.env.PUBLIC_URL + props.icon} alt="project-logo" />
       </div>
       <div className={styles["text-container"]}>
         <div className={styles.name}>{props.name}</div>
