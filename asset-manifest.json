@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/joyce-profolio/static/css/main.67032a8e.css",
-    "main.js": "/joyce-profolio/static/js/main.e2911523.js",
+    "main.css": "/joyce-profolio/static/css/main.de564051.css",
+    "main.js": "/joyce-profolio/static/js/main.0a6c0b73.js",
     "static/js/787.eae6f066.chunk.js": "/joyce-profolio/static/js/787.eae6f066.chunk.js",
     "static/media/yu-logo.svg": "/joyce-profolio/static/media/yu-logo.19198fe2c8183541660cfee6ff0762ef.svg",
     "index.html": "/joyce-profolio/index.html",
     "static/media/ellipse.svg": "/joyce-profolio/static/media/ellipse.cfad1a0820c025d646c89f0a839fea5e.svg",
     "static/media/triangle.svg": "/joyce-profolio/static/media/triangle.c99c87bffe91eb5cea9f976c9fb22961.svg",
-    "main.67032a8e.css.map": "/joyce-profolio/static/css/main.67032a8e.css.map",
-    "main.e2911523.js.map": "/joyce-profolio/static/js/main.e2911523.js.map",
+    "main.de564051.css.map": "/joyce-profolio/static/css/main.de564051.css.map",
+    "main.0a6c0b73.js.map": "/joyce-profolio/static/js/main.0a6c0b73.js.map",
     "787.eae6f066.chunk.js.map": "/joyce-profolio/static/js/787.eae6f066.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.67032a8e.css",
-    "static/js/main.e2911523.js"
+    "static/css/main.de564051.css",
+    "static/js/main.0a6c0b73.js"
   ]
 }
