@@ -1,24 +1,22 @@
-import { useState } from "react";
 import styles from "./Checkbox.module.scss";
 
-type CheckboxType = {
-  children: string;
-  handleChecked: () => void;
-  handleUnchecked: () => void;
+type CheckboxPropType = {
+  title: string;
+  checked: boolean;
+  id: number;
+  handleClick: (id: number) => void;
 };
 
-export default function Checkbox(props: CheckboxType) {
-  const [checked, setChecked] = useState(false);
-
-  const handleClick = () => {
-    checked ? props.handleUnchecked() : props.handleChecked();
-    setChecked(!checked);
-  };
-
+export default function Checkbox(props: CheckboxPropType) {
   return (
     <div className={styles["checkbox-wrapper"]}>
-      <input type="checkbox" onClick={handleClick} />
-      <span className={styles.label}>{props.children}</span>
+      <input
+        type="checkbox"
+        onClick={() => props.handleClick(props.id)}
+        checked={props.checked}
+        onChange={() => {}}
+      />
+      <span className={styles.label}>{props.title}</span>
     </div>
   );
 }

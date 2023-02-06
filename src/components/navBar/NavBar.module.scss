@@ -40,6 +40,14 @@
       button:hover {
         color: white;
       }
+
+      .focused {
+        color: white;
+
+        path {
+          stroke: white;
+        }
+      }
     }
   }
 }

@@ -49,9 +49,14 @@ export default class Home extends Component<{}, HomeState> {
   render() {
     return (
       <div className={styles["home-container"]} ref={this.ref}>
-        {this.state.projects.map((project) => (
-          <div className={styles.project}>
+        {this.state.projects.map((project, i) => (
+          <div
+            className={`${styles.project} ${
+              i === 0 ? styles["add-padding-left"] : ""
+            }`}
+          >
             <Project
+              key={i}
               icon={project.icon}
               name={project.name}
               type={project.type}
