@@ -1,7 +1,7 @@
 import { Component, createRef, RefObject } from "react";
 import Project from "../Project/Project";
 import styles from "./Home.module.scss";
-import data from "../../data/project-data.json";
+import data from "../../data/projects.json";
 
 type HomeState = {
   projects: Array<{ icon: string; name: string; type: string }>;
