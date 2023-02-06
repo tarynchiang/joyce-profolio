@@ -1,7 +1,7 @@
 import { Component } from "react";
 import FilterBar from "../FilterBar/FilterBar";
 import styles from "./NavBar.module.scss";
-import { ReactComponent as YuLogo } from "../../assets/yu-logo.svg";
+import { ReactComponent as YuLogo } from "../../assets/images/yu-logo.svg";
 
 export default class NavBar extends Component {
   state = {
