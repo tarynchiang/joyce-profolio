@@ -28,3 +28,21 @@
 .add-padding-left {
   padding-left: 2.1vw;
 }
+
+.bg > * {
+  z-index: -1;
+}
+
+.ellipse {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 24%;
+}
+
+.triangle {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 25%;
+}

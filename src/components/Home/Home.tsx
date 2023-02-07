@@ -2,6 +2,7 @@ import { Component, createRef, RefObject } from "react";
 import Project from "../Project/Project";
 import styles from "./Home.module.scss";
 import data from "../../data/projects.json";
+import HomeBackground from "./HomeBackground";
 
 type HomeState = {
   projects: Array<{ icon: string; name: string; type: string }>;
@@ -48,21 +49,25 @@ export default class Home extends Component<{}, HomeState> {
 
   render() {
     return (
-      <div className={styles["home-container"]} ref={this.ref}>
-        {this.state.projects.map((project, i) => (
-          <div
-            className={`${styles.project} ${
-              i === 0 ? styles["add-padding-left"] : ""
-            }`}
-          >
-            <Project
-              key={i}
-              icon={project.icon}
-              name={project.name}
-              type={project.type}
-            />
-          </div>
-        ))}
+      <div>
+        <HomeBackground />
+
+        <div className={styles["home-container"]} ref={this.ref}>
+          {this.state.projects.map((project, i) => (
+            <div
+              className={`${styles.project} ${
+                i === 0 ? styles["add-padding-left"] : ""
+              }`}
+            >
+              <Project
+                key={i}
+                icon={project.icon}
+                name={project.name}
+                type={project.type}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     );
   }

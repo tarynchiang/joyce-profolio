@@ -1,0 +1,100 @@
+.birka-container {
+  transform-origin: right top;
+  transform: rotate(-90deg) translateY(-100vh);
+  height: 100vw;
+  width: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+
+  .bg-container {
+    position: absolute;
+    display: flex;
+    transform-origin: left top;
+    transform: rotate(90deg) translateY(-100vh);
+
+    .section {
+      flex-shrink: 0;
+      width: 100vw;
+      height: 100vh;
+
+      &.one {
+        background-color: #0b0b0b;
+        .birka-img {
+          position: absolute;
+          height: 68vh;
+          width: 68vh;
+          top: 0;
+          bottom: 0;
+          margin: auto 0;
+          left: -12vh;
+        }
+      }
+
+      &.two {
+        background-color: #222222;
+      }
+    }
+  }
+
+  .content-container {
+    height: 100vh;
+    transform-origin: left top;
+    position: absolute;
+    transform: rotate(90deg) translateY(-100vh);
+    display: flex;
+    align-items: center;
+    gap: 10.5vw;
+    padding-left: 9vw;
+
+    .birka-intro-wrapper {
+      color: white;
+      width: 34vw;
+      height: 46vh;
+      font-size: 1vw;
+      display: flex;
+      flex-direction: column;
+      gap: 8vh;
+
+      p,
+      h2,
+      h3 {
+        margin: 0;
+      }
+
+      .intro-header-wrapper {
+        h2 {
+          font-size: 5.7vh;
+          font-weight: 500;
+        }
+
+        .tags-wrapper {
+          padding-top: 1.7vh;
+          display: flex;
+          gap: 12px;
+        }
+      }
+
+      .intro-content-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4vh;
+        h3 {
+          font-size: 4vh;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .birka-page-wrapper {
+      img {
+        width: 66vw;
+        height: 67vh;
+      }
+    }
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
